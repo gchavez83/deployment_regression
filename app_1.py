@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
-
-
-import pandas as pd
 from pycaret.regression import load_model, predict_model
+import pandas as pd
 import streamlit as st
 st.set_page_config(page_title="Diamond Price Prediction App")
 @st.cache(allow_output_mutation=True)
