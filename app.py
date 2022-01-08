@@ -7,7 +7,7 @@ import streamlit as st
 st.set_page_config(page_title="Diamond Price Prediction App")
 @st.cache(allow_output_mutation=True)
 def get_model():
-    return load_model('Catboost_regression_demo (1)')
+    return load_model('Catboost_regression_diamond')
 def predict(model, df):
     predictions = predict_model(model, data = df)
     return predictions['Label'][0]
