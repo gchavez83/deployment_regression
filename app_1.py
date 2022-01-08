@@ -29,4 +29,4 @@ input_df = pd.DataFrame([input_dict])
 if predict_button:
     out = predict(model, input_df)
     out = '$' + str(round(out,2))
-    st.success(f'La predicción del precio es {out}.')
+    st.success(f'La predicción del precio es {out}')
