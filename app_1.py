@@ -28,4 +28,5 @@ input_dict = {'Carat Weight': carat_weight, 'Cut': value_cut, 'Color': value_col
 input_df = pd.DataFrame([input_dict])
 if predict_button:
     out = predict(model, input_df)
-    st.success(2f'La predicción del precio es ${out}.')
+    out = '$' + str(round(out,2))
+    st.success(f'La predicción del precio es {out}.')
